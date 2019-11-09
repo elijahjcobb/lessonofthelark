@@ -1,3 +1,255 @@
 * {
-  border: none;
+	margin: 0;
+	padding: 0;
+}
+
+$mainColor: #26a791;
+
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700&display=swap');
+
+body {
+	font-family: 'Crimson Text', serif;
+}
+
+.link {
+	color: $mainColor;
+}
+
+.link-inv {
+	color: white;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	background-color: $mainColor;
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 10px;
+	font-size: 1.25em;
+}
+
+header {
+
+	nav {
+		display: flex;
+		padding: 20px;
+		justify-content: space-between;
+
+		h1 {
+			font-family: 'McLaren', cursive;
+		}
+	}
+
+}
+
+main {
+
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.book {
+			width: 100%;
+		}
+
+		h2 {
+			margin-top: 40px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		p {
+			text-align: justify;
+		}
+
+		.author {
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 90vw;
+
+			.headshot {
+				margin: 10px 0;
+				width: 80%;
+				border-radius: 50%;
+			}
+
+			.buttons {
+				display: flex;
+				justify-content: space-around;
+				a {
+					margin: 20px;
+				}
+			}
+		}
+
+
+
+		.inset {
+			width: 90vw;
+		}
+
+		.endorsement {
+
+			display: flex;
+			flex-direction: column;
+			width: 90vw;
+			align-items: center;
+			margin-top: 40px;
+
+			img {
+				width: 140px;
+				height: 140px;
+				border-radius: 50%;
+				box-shadow: 10px 10px 20px gray;
+			}
+
+			.quote {
+
+				margin-top: 10px;
+
+				p, span {
+					text-align: justify;
+					display: block;
+				}
+
+				p {
+					font-style: italic;
+				}
+
+				span {
+					margin-top: 10px;
+					font-weight: bold;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 60px;
+	margin-top: 40px;
+	justify-content: center;
+	background: $mainColor;
+}
+
+@media (min-width: 800px) {
+
+	nav {
+
+		h1 {
+			font-size: 3em;
+		}
+
+		box-shadow: 10px 10px 20px lightgray;
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		background-color: white;
+
+		.btn {
+			margin-right: 100px;
+			padding: 10px 40px;
+		}
+	}
+
+	.btn {
+		padding: 10px 40px;
+		font-family: 'McLaren', cursive;
+		transition: transform 250ms ease-in-out;
+	}
+
+	.btn:hover {
+		transform: scale(1.1);
+	}
+
+	.inset {
+		width: unset;
+	}
+
+
+	h2 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+
+	.info {
+
+		margin-top: 140px;
+		display: grid;
+		grid-template-columns: 50% 50%;
+
+		.book {
+			display: block;
+			height: 80vh;
+			object-fit: contain;
+		}
+
+		.inset {
+			padding-right: 40px;
+			width: unset;
+		}
+
+	}
+
+	.about {
+
+		display: flex;
+		flex-direction: column;
+		background-color: $mainColor;
+		padding: 40px;
+		margin: 80px 0;
+		align-items: center;
+
+		.author {
+
+			max-width: 1000px;
+			display: grid;
+			grid-template-columns: 300px auto;
+
+			.headshot {
+				display: block;
+				max-width: 300px;
+			}
+		}
+
+		.btn {
+			background-color: white;
+			color: $mainColor;
+		}
+
+		.btn:hover {
+			transform: scale(1.1);
+		}
+
+	}
+
+	section {
+		.endorsement {
+			flex-direction: row;
+			width: 60vw;
+			.quote {
+				width: 60%;
+			}
+		}
+	}
+
+
+
 }

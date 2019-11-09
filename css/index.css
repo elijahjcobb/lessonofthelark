@@ -1,5 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=McLaren&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,700&display=swap");
 * {
-  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+}
+
+.link {
+  color: #26a791;
+}
+
+.link-inv {
+  color: white;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #26a791;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.25em;
+}
+
+header nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+header nav h1 {
+  font-family: "McLaren", cursive;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .book {
+  width: 100%;
+}
+main section h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+main section p {
+  text-align: justify;
+}
+main section .author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+}
+main section .author .headshot {
+  margin: 10px 0;
+  width: 80%;
+  border-radius: 50%;
+}
+main section .author .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+main section .author .buttons a {
+  margin: 20px;
+}
+main section .inset {
+  width: 90vw;
+}
+main section .endorsement {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  align-items: center;
+  margin-top: 40px;
+}
+main section .endorsement img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px gray;
+}
+main section .endorsement .quote {
+  margin-top: 10px;
+}
+main section .endorsement .quote p, main section .endorsement .quote span {
+  text-align: justify;
+  display: block;
+}
+main section .endorsement .quote p {
+  font-style: italic;
+}
+main section .endorsement .quote span {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px;
+  margin-top: 40px;
+  justify-content: center;
+  background: #26a791;
+}
+
+@media (min-width: 800px) {
+  nav {
+    box-shadow: 10px 10px 20px lightgray;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+  }
+  nav h1 {
+    font-size: 3em;
+  }
+  nav .btn {
+    margin-right: 100px;
+    padding: 10px 40px;
+  }
+
+  .btn {
+    padding: 10px 40px;
+    font-family: "McLaren", cursive;
+    transition: transform 250ms ease-in-out;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+  }
+
+  .inset {
+    width: unset;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  .info {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .info .book {
+    display: block;
+    height: 80vh;
+    object-fit: contain;
+  }
+  .info .inset {
+    padding-right: 40px;
+    width: unset;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    background-color: #26a791;
+    padding: 40px;
+    margin: 80px 0;
+    align-items: center;
+  }
+  .about .author {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 300px auto;
+  }
+  .about .author .headshot {
+    display: block;
+    max-width: 300px;
+  }
+  .about .btn {
+    background-color: white;
+    color: #26a791;
+  }
+  .about .btn:hover {
+    transform: scale(1.1);
+  }
+
+  section .endorsement {
+    flex-direction: row;
+    width: 60vw;
+  }
+  section .endorsement .quote {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
