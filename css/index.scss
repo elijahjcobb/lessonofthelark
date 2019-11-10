@@ -154,7 +154,7 @@ footer {
 			font-size: 3em;
 		}
 
-		box-shadow: 10px 10px 20px lightgray;
+		box-shadow: 0 0 10px lightgray;
 		position: fixed;
 		top: 0;
 		width: 100vw;
@@ -193,12 +193,20 @@ footer {
 
 		margin-top: 140px;
 		display: grid;
-		grid-template-columns: 50% 50%;
+		width: 90vw;
+		margin-left: 10vw;
+		grid-template-columns: 30% 5% 65%;
 
 		.book {
 			display: block;
-			height: 80vh;
 			object-fit: contain;
+			margin-right: 20px;
+			box-shadow: 0 0 20px black;
+			transition: transform 250ms ease-in-out;
+		}
+
+		.book:hover {
+			transform: scale(1.025);
 		}
 
 		.inset {
@@ -226,6 +234,11 @@ footer {
 			.headshot {
 				display: block;
 				max-width: 300px;
+				transition: transform 250ms ease-in-out;
+			}
+
+			.headshot:hover {
+				transform: scale(1.25) rotate3d(1, 1, 1, 10deg);
 			}
 		}
 

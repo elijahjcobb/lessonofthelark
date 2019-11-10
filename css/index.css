@@ -115,7 +115,7 @@ footer {
 
 @media (min-width: 800px) {
   nav {
-    box-shadow: 10px 10px 20px lightgray;
+    box-shadow: 0 0 10px lightgray;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -154,12 +154,19 @@ footer {
   .info {
     margin-top: 140px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    width: 90vw;
+    margin-left: 10vw;
+    grid-template-columns: 30% 5% 65%;
   }
   .info .book {
     display: block;
-    height: 80vh;
     object-fit: contain;
+    margin-right: 20px;
+    box-shadow: 0 0 20px black;
+    transition: transform 250ms ease-in-out;
+  }
+  .info .book:hover {
+    transform: scale(1.025);
   }
   .info .inset {
     padding-right: 40px;
@@ -182,6 +189,10 @@ footer {
   .about .author .headshot {
     display: block;
     max-width: 300px;
+    transition: transform 250ms ease-in-out;
+  }
+  .about .author .headshot:hover {
+    transform: scale(1.25) rotate3d(1, 1, 1, 10deg);
   }
   .about .btn {
     background-color: white;
