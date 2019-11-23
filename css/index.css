@@ -9,6 +9,17 @@ body {
   font-family: "Crimson Text", serif;
 }
 
+.orderButtons {
+  display: flex;
+  max-height: 100px;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.orderButtons .btn {
+  margin: 10px 20px;
+}
+
 .link {
   color: #26a791;
 }
@@ -33,6 +44,7 @@ header nav {
   display: flex;
   padding: 20px;
   justify-content: space-between;
+  z-index: 100;
 }
 header nav h1 {
   font-family: "McLaren", cursive;
@@ -144,7 +156,7 @@ footer {
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   p {

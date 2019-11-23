@@ -12,6 +12,20 @@ body {
 	font-family: 'Crimson Text', serif;
 }
 
+.orderButtons {
+
+	display: flex;
+	max-height: 100px;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 40px;
+
+	.btn {
+		margin: 10px 20px;
+	}
+
+}
+
 .link {
 	color: $mainColor;
 }
@@ -38,6 +52,7 @@ header {
 		display: flex;
 		padding: 20px;
 		justify-content: space-between;
+		z-index: 100;
 
 		h1 {
 			font-family: 'McLaren', cursive;
@@ -182,7 +197,7 @@ footer {
 
 
 	h2 {
-		font-size: 2em;
+		font-size: 3em;
 	}
 
 	p {
