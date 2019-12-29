@@ -166,7 +166,7 @@ footer {
   .info {
     margin-top: 140px;
     display: grid;
-    width: 90vw;
+    width: 85vw;
     margin-left: 10vw;
     grid-template-columns: 30% 5% 65%;
   }
@@ -221,6 +221,16 @@ footer {
   section .endorsement .quote {
     width: 60%;
   }
+}
+.news {
+  background: #ed6fac;
+  margin-top: 40px;
+  padding: 40px 0;
+}
+.news a {
+  display: block;
+  color: black;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=index.css.map */

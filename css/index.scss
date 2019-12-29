@@ -104,8 +104,6 @@ main {
 			}
 		}
 
-
-
 		.inset {
 			width: 90vw;
 		}
@@ -208,7 +206,7 @@ footer {
 
 		margin-top: 140px;
 		display: grid;
-		width: 90vw;
+		width: 85vw;
 		margin-left: 10vw;
 		grid-template-columns: 30% 5% 65%;
 
@@ -280,4 +278,16 @@ footer {
 
 
 
+}
+
+.news {
+	background: #ed6fac;
+	margin-top: 40px;
+	padding: 40px 0;
+
+	a {
+		display: block;
+		color: black;
+		font-size: 1.5em;
+	}
 }
